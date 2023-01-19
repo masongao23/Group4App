@@ -1,11 +1,13 @@
 from django.shortcuts import render
 
-# Create your views here.
 
-def home(request):
+def view_weather(request):
     data = dict()
     import datetime
     time = datetime.datetime.now()
-    data['time_of_day'] = time
-    print(time)
-    return render(request,'home.html',context=data)
+    xy = 1000
+    data["time_of_day"] = time
+    data['xy'] = xy
+
+    return render(request, "weather.html", context=data)
+

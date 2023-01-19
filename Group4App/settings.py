@@ -86,7 +86,7 @@ DATABASES = {
 }
 """
 DATABASES = {
- 'default': dj_database_url.config(default='postgresql://postgres:postgres@localhost:5432/Group4-webapp',
+ 'default': dj_database_url.config(default='postgresql://postgres:BetaThetaPi180@localhost:5432/Group4-webapp',
                                    conn_max_age=600)}
 
 # Password validation
